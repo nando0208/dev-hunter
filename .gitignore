@@ -1,4 +1,4 @@
 # removig xcuserdata
 */xcuserdata/*
-./Pods/*
+Pods/*
 Podfile.lock
