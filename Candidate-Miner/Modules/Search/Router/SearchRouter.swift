@@ -13,7 +13,7 @@ final class SearchRouter: SearchRouterProtocol {
     static func presentSearchModule() -> UIViewController? {
 
         // Generating module components
-        let view: SearchViewProtocol = SearchView()
+        let view: (SearchViewProtocol & Stateful) = SearchView()
         let presenter: SearchPresenterProtocol & SearchInteractorOutputProtocol = SearchPresenter()
         let interactor: SearchInteractorInputProtocol = SearchInteractor()
         let APIDataManager: SearchAPIDataManagerInputProtocol = SearchAPIDataManager()
@@ -28,7 +28,7 @@ final class SearchRouter: SearchRouterProtocol {
         interactor.presenter = presenter
         interactor.APIDataManager = APIDataManager
         interactor.localDatamanager = localDataManager
-        
+
         return view as? UIViewController
     }
 }

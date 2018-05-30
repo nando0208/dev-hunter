@@ -20,6 +20,11 @@
 		5911F5D320BC967A00CE2BA0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5D220BC967A00CE2BA0 /* Network.swift */; };
 		5911F5D720BDAFF700CE2BA0 /* GithubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5D620BDAFF700CE2BA0 /* GithubRequest.swift */; };
 		5911F5DA20BDD02100CE2BA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5D920BDD02100CE2BA0 /* User.swift */; };
+		5911F5DD20BDD4B400CE2BA0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5DC20BDD4B400CE2BA0 /* UserViewModel.swift */; };
+		5911F5E120BDE82E00CE2BA0 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5E020BDE82E00CE2BA0 /* ArrayExtensions.swift */; };
+		5911F5E720BDFA2B00CE2BA0 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5E520BDFA2B00CE2BA0 /* EmptyView.swift */; };
+		5911F5E820BDFA2B00CE2BA0 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5E620BDFA2B00CE2BA0 /* Stateful.swift */; };
+		5911F5EA20BDFAB000CE2BA0 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5911F5E920BDFAB000CE2BA0 /* EmptyView.xib */; };
 		59FEF24A20BAFC95006CD77E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF24920BAFC95006CD77E /* AppDelegate.swift */; };
 		59FEF24F20BAFC95006CD77E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF24D20BAFC95006CD77E /* Main.storyboard */; };
 		59FEF25120BAFC97006CD77E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF25020BAFC97006CD77E /* Assets.xcassets */; };
@@ -64,6 +69,11 @@
 		5911F5D220BC967A00CE2BA0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		5911F5D620BDAFF700CE2BA0 /* GithubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRequest.swift; sourceTree = "<group>"; };
 		5911F5D920BDD02100CE2BA0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5911F5DC20BDD4B400CE2BA0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		5911F5E020BDE82E00CE2BA0 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		5911F5E520BDFA2B00CE2BA0 /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		5911F5E620BDFA2B00CE2BA0 /* Stateful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
+		5911F5E920BDFAB000CE2BA0 /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 		59FEF24620BAFC95006CD77E /* Candidate-Miner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Candidate-Miner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FEF24920BAFC95006CD77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59FEF24E20BAFC95006CD77E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -222,6 +232,7 @@
 		5911F5CF20BC93A700CE2BA0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				5911F5DE20BDE80000CE2BA0 /* Utils */,
 				5911F5D820BDD01800CE2BA0 /* Models */,
 				5911F5D520BDAFE800CE2BA0 /* Requests */,
 				5911F5D020BC942C00CE2BA0 /* NetworkRequest.swift */,
@@ -241,9 +252,46 @@
 		5911F5D820BDD01800CE2BA0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5911F5DB20BDD4A700CE2BA0 /* ViewModels */,
 				5911F5D920BDD02100CE2BA0 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5911F5DB20BDD4A700CE2BA0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5911F5DC20BDD4B400CE2BA0 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5911F5DE20BDE80000CE2BA0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5911F5E420BDFA2B00CE2BA0 /* Stateful */,
+				5911F5DF20BDE81B00CE2BA0 /* Extensions */,
+			);
+			name = Utils;
+			path = "Candidate-Miner/Utils";
+			sourceTree = SOURCE_ROOT;
+		};
+		5911F5DF20BDE81B00CE2BA0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5911F5E020BDE82E00CE2BA0 /* ArrayExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5911F5E420BDFA2B00CE2BA0 /* Stateful */ = {
+			isa = PBXGroup;
+			children = (
+				5911F5E920BDFAB000CE2BA0 /* EmptyView.xib */,
+				5911F5E520BDFA2B00CE2BA0 /* EmptyView.swift */,
+				5911F5E620BDFA2B00CE2BA0 /* Stateful.swift */,
+			);
+			path = Stateful;
 			sourceTree = "<group>";
 		};
 		59FEF23D20BAFC95006CD77E = {
@@ -423,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5911F5EA20BDFAB000CE2BA0 /* EmptyView.xib in Resources */,
 				59FEF25420BAFC97006CD77E /* LaunchScreen.storyboard in Resources */,
 				59FEF25120BAFC97006CD77E /* Assets.xcassets in Resources */,
 				59FEF24F20BAFC95006CD77E /* Main.storyboard in Resources */,
@@ -570,10 +619,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5911F5DA20BDD02100CE2BA0 /* User.swift in Sources */,
+				5911F5E120BDE82E00CE2BA0 /* ArrayExtensions.swift in Sources */,
 				5911F5CD20BC928600CE2BA0 /* SearchRouter.swift in Sources */,
 				59FEF24A20BAFC95006CD77E /* AppDelegate.swift in Sources */,
+				5911F5E720BDFA2B00CE2BA0 /* EmptyView.swift in Sources */,
 				5911F5CB20BC928600CE2BA0 /* SearchItem.swift in Sources */,
 				5911F5CC20BC928600CE2BA0 /* SearchInteractor.swift in Sources */,
+				5911F5DD20BDD4B400CE2BA0 /* UserViewModel.swift in Sources */,
+				5911F5E820BDFA2B00CE2BA0 /* Stateful.swift in Sources */,
 				5911F5D120BC942C00CE2BA0 /* NetworkRequest.swift in Sources */,
 				5911F5D320BC967A00CE2BA0 /* Network.swift in Sources */,
 				5911F5D720BDAFF700CE2BA0 /* GithubRequest.swift in Sources */,

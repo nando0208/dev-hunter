@@ -5,6 +5,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 // MARK: - Protocols
 
@@ -14,9 +15,12 @@ protocol SearchPresenterProtocol: class {
 
     // MARK: - Properties
 
-    var view: SearchViewProtocol? { get set }
+    var view: (SearchViewProtocol & Stateful)? { get set }
     var interactor: SearchInteractorInputProtocol? { get set }
     var router: SearchRouterProtocol? { get set }
+
+    func viewDidload()
+    func touchedSearch(with key: String)
 }
 
 // MARK: SearchViewProtocol
@@ -46,15 +50,22 @@ protocol SearchInteractorInputProtocol: class {
     var presenter: SearchInteractorOutputProtocol? { get set }
     var APIDataManager: SearchAPIDataManagerInputProtocol? { get set }
     var localDatamanager: SearchLocalDataManagerInputProtocol? { get set }
+
+    func searchUsers(by keyWord: String)
+    func user(at index: Int) -> UserViewModel?
 }
 
 // MARK: SearchInteractorOutputProtocol
 // INTERACTOR -> PRESENTER
-protocol SearchInteractorOutputProtocol: class { }
+protocol SearchInteractorOutputProtocol: class {
+    func finishedSearch(with error: Error?)
+}
 
 // MARK: SearchAPIDataManagerInputProtocol
 // INTERACTOR -> APIDATAMANAGER
-protocol SearchAPIDataManagerInputProtocol: class { }
+protocol SearchAPIDataManagerInputProtocol: class {
+    func fetchUsers(by key: String, completion: @escaping (Result<SearchContainer>) -> Void)
+}
 
 // MARK: SearchLocalDataManagerInputProtocol
 // INTERACTOR -> LOCALDATAMANAGER

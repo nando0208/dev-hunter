@@ -41,3 +41,9 @@ final class SearchView: UIViewController {
 extension SearchView: SearchViewProtocol {
 
 }
+
+// MARK: - Stateful
+
+extension SearchView: Stateful {
+    func adapt(toState state: StateMachine) {}
+}
