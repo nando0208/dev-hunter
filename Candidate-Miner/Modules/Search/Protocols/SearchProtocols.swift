@@ -3,7 +3,6 @@
 // Copyright (c) 2018 Fernando Ferreira. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Alamofire
 
@@ -44,6 +43,7 @@ protocol SearchRouterProtocol: class {
     // MARK: - Presentation
 
     static func presentSearchModule() -> UIViewController?
+    func presentUser(_ user: UserViewModel, from view: SearchViewProtocol?)
 }
 
 // MARK: SearchInteractorInputProtocol

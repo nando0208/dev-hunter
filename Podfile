@@ -25,7 +25,6 @@ target 'Candidate-MinerTests' do
     pod 'Nimble-Snapshots', '6.6.0'
     pod 'Quick', '1.2.0'
     pod 'Nimble', '7.0.3'
-    pod 'Unbox', '2.5.0'
 end
 
 target 'Candidate-MinerUITests' do

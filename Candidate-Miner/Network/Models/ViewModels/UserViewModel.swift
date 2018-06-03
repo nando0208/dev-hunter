@@ -9,7 +9,7 @@
 import Foundation
 
 struct UserViewModel {
-    private let user: User
+    let user: User
 
     init(user: User) {
         self.user = user

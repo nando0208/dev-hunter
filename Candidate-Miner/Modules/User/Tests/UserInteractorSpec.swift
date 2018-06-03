@@ -8,26 +8,26 @@ import Quick
 import Nimble
 @testable import Candidate_Miner
 
-final class SearchInteractorSpec: QuickSpec {
+final class UserInteractorSpec: QuickSpec {
 
     // MARK: - Mocks
 
-    fileprivate class PresenterMock: SearchInteractorOutputProtocol {}
-    fileprivate class APIDataManagerMock: SearchAPIDataManagerInputProtocol {}
-    fileprivate class LocalDataManagerMock: SearchLocalDataManagerInputProtocol {}
+    fileprivate class PresenterMock: UserInteractorOutputProtocol {}
+    fileprivate class APIDataManagerMock: UserAPIDataManagerInputProtocol {}
+    fileprivate class LocalDataManagerMock: UserLocalDataManagerInputProtocol {}
 
     // MARK: - Tests
 
     override func spec() {
-        describe("SearchInteractor") {
+        describe("UserInteractor") {
 
             // MARK: - Properties
 
-            var sut: SearchInteractor!
+            var sut: UserInteractor!
             var presenterMock: PresenterMock!
 
             beforeEach {
-                sut = SearchInteractor()
+                sut = UserInteractor()
                 sut.APIDataManager = APIDataManagerMock()
                 sut.localDatamanager = LocalDataManagerMock()
                 presenterMock = PresenterMock()

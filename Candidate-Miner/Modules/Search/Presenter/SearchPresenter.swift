@@ -21,14 +21,14 @@ final class SearchPresenter: SearchPresenterProtocol {
         let filler = EmptyFiller(title: "Find a user",
                                  subTile: "Type something to\nsearch",
                                  actionName: nil)
-        view?.adapt(toState: .empty(filler))
+        view?.transition(toState: .empty(filler))
     }
 
     // MARK: Actions
 
     func touchedSearch(with key: String) {
-        view?.adapt(toState: .loading)
         interactor?.searchUsers(by: key)
+        view?.transition(toState: .loading)
     }
 
     func numberOfCells() -> Int {
@@ -42,7 +42,7 @@ final class SearchPresenter: SearchPresenterProtocol {
 
     func didSelectedCell(at index: IndexPath) {
         guard let user = interactor?.user(at: index.row) else { return }
-
+        router?.presentUser(user, from: view)
     }
 }
 
@@ -51,13 +51,13 @@ final class SearchPresenter: SearchPresenterProtocol {
 extension SearchPresenter: SearchInteractorOutputProtocol {
     func finishedSearch(with error: Error?) {
         guard let error = error else {
-            view?.adapt(toState: .content)
+            view?.transition(toState: .content)
             return
         }
 
         let empty = EmptyFiller(title: "Error",
                                 subTile: error.localizedDescription,
                                 actionName: "Try Again")
-        view?.adapt(toState: .error(empty))
+        view?.transition(toState: .error(empty))
     }
 }

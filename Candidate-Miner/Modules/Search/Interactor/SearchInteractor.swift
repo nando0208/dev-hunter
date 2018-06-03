@@ -20,6 +20,7 @@ final class SearchInteractor: SearchInteractorInputProtocol {
     init() {}
 
     func searchUsers(by keyWord: String) {
+        users = []
         APIDataManager?.fetchUsers(by: keyWord) {[weak self] result in
             switch result {
             case .success(let container):

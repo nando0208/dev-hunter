@@ -1,4 +1,4 @@
-//
+    //
 //  Network.swift
 //  Candidate-Miner
 //
@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 final class Network {
+
     static func request<T: Decodable>(_ networkRequest: NetworkRequest, completion: @escaping (Result<T>) -> Void) {
         do {
             let urlRequest = try networkRequest.toRequest()

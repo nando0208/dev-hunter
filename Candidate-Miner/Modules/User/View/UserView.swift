@@ -7,24 +7,27 @@ import UIKit
 import Alamofire
 import Cartography
 
-final class SearchView: UIViewController {
+final class UserView: UIViewController {
+
+    // MARK: - Outlets
 
     // MARK: - Properties
 
     let tableView = UITableView()
-    let loadingView = UIActivityIndicatorView()
+    let loadingView = UIActivityIndicatorView(frame: CGRect(x: 100.0, y: 100.0, width: 44.0, height: 44.0))
     let emptyView: EmptyView? = Bundle.main.loadNibNamed("EmptyView", owner: nil, options: nil)?.first as? EmptyView
 
-    var presenter: SearchPresenterProtocol?
+    var presenter: UserPresenterProtocol?
 
     // MARK: - View's Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         view.backgroundColor = .white
+        navigationController?.navigationBar.prefersLargeTitles =  false
 
         configureTableView()
-        configureSearchBar()
         configureEmptyView()
         adjustContraints()
 
@@ -35,8 +38,7 @@ final class SearchView: UIViewController {
 
     private func configureTableView() {
         tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(UINib.init(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
+        tableView.register(UINib.init(nibName: "RepositoryCell", bundle: nil), forCellReuseIdentifier: "RepositoryCell")
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 400.0
         tableView.tableFooterView = UIView()
@@ -50,15 +52,6 @@ final class SearchView: UIViewController {
         constrain(tableView, loadingView) { tablePx, loadingPx in
             loadingPx.center == tablePx.center
         }
-    }
-
-    private func configureSearchBar() {
-        title = "Usuários"
-        navigationController?.navigationBar.prefersLargeTitles =  true
-
-        let search = UISearchController(searchResultsController: nil)
-        search.searchBar.delegate = self
-        navigationItem.searchController = search
     }
 
     private func configureEmptyView() {
@@ -81,14 +74,12 @@ final class SearchView: UIViewController {
 
 // MARK: - Stateful
 
-extension SearchView: Stateful {
+extension UserView: Stateful {
     func adapt(toState state: StateMachine) {
         switch state {
         case .content:
             emptyView?.isHidden = true
             loadingView.stopAnimating()
-            navigationItem.hidesSearchBarWhenScrolling = true
-            navigationItem.searchController?.isActive = false
             tableView.reloadData()
 
         case .loading:
@@ -99,18 +90,19 @@ extension SearchView: Stateful {
         case let .empty(filler), let .error(filler):
             emptyView?.fillEmptyState(filler)
             emptyView?.isHidden = false
-            navigationItem.hidesSearchBarWhenScrolling = false
         }
     }
 }
 
-// MARK: - FilterViewProtocol
+// MARK: - UserViewProtocol
 
-extension SearchView: SearchViewProtocol {}
+extension UserView: UserViewProtocol {
+
+}
 
 // MARK: - UITableViewDataSource
 
-extension SearchView: UITableViewDataSource {
+extension UserView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter?.numberOfCells() ?? 0
     }
@@ -118,37 +110,20 @@ extension SearchView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell?
 
-        if let userCell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as? UserCell {
-            cell = userCell
-            presenter?.setContent(userCell, at: indexPath)
+        let repoCell = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath)
+        if let repoCell = repoCell as? RepositoryCell {
+            cell = repoCell
+            presenter?.setContent(repoCell, at: indexPath)
         }
 
         return cell ?? UITableViewCell()
     }
 }
 
-// MARK: - UITableViewDelegate
-
-extension SearchView: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.didSelectedCell(at: indexPath)
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-}
-
-// MARK: - UISearchBarDelegate
-
-extension SearchView: UISearchBarDelegate {
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let text = searchBar.text else { return }
-        presenter?.touchedSearch(with: text)
-    }
-}
-
 // MARK: - EmptyViewDelegate
 
-extension SearchView: EmptyViewDelegate {
+extension UserView: EmptyViewDelegate {
     func emptyButtonTouched() {
-//        presenter?.tryAgainTouched()
+        //        presenter?.tryAgainTouched()
     }
 }

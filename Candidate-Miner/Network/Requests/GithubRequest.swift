@@ -11,9 +11,17 @@ import Alamofire
 
 enum GithubRequest: NetworkRequest {
     case search(keyWord: String)
+    case repositories(userNams: String)
 
     var baseURL: URL? { return URL(string: "https://api.github.com") }
-    var path: String { return "search/users" }
+    var path: String {
+        switch self {
+        case .search:
+            return "search/users"
+        case .repositories(let userName):
+            return "users/\(userName)/repos"
+        }
+    }
     var method: HTTPMethod { return .get }
     var encoding: ParameterEncoding { return URLEncoding.default }
 
@@ -23,7 +31,8 @@ enum GithubRequest: NetworkRequest {
             return [
                 "q": keyWord
             ]
+        case .repositories:
+            return nil
         }
     }
-
 }

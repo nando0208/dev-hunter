@@ -33,7 +33,9 @@ final class SearchRouter: SearchRouterProtocol {
         return UINavigationController(rootViewController: viewController)
     }
 
-    func presentUser(_ user: User, from view: SearchViewProtocol?) {
-        
+    func presentUser(_ user: UserViewModel, from view: SearchViewProtocol?) {
+        guard let userView = UserRouter.presentUserModule(with: user.user) else { return }
+        let navigation = (view as? UIViewController)?.navigationController
+        navigation?.pushViewController(userView, animated: true)
     }
 }
