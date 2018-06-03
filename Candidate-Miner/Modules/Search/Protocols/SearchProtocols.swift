@@ -21,6 +21,11 @@ protocol SearchPresenterProtocol: class {
 
     func viewDidload()
     func touchedSearch(with key: String)
+
+    func numberOfCells() -> Int
+    func setContent<T>(_ view: T, at index: IndexPath) where T: Displayable
+
+    func didSelectedCell(at index: IndexPath)
 }
 
 // MARK: SearchViewProtocol
@@ -52,6 +57,7 @@ protocol SearchInteractorInputProtocol: class {
     var localDatamanager: SearchLocalDataManagerInputProtocol? { get set }
 
     func searchUsers(by keyWord: String)
+    func numberOfUsers() -> Int
     func user(at index: Int) -> UserViewModel?
 }
 

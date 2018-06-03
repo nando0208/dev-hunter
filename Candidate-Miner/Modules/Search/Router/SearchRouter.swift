@@ -29,6 +29,11 @@ final class SearchRouter: SearchRouterProtocol {
         interactor.APIDataManager = APIDataManager
         interactor.localDatamanager = localDataManager
 
-        return view as? UIViewController
+        guard let viewController = view as? UIViewController else { return nil }
+        return UINavigationController(rootViewController: viewController)
+    }
+
+    func presentUser(_ user: User, from view: SearchViewProtocol?) {
+        
     }
 }

@@ -17,11 +17,32 @@ final class SearchPresenter: SearchPresenterProtocol {
 
     init() {}
 
+    func viewDidload() {
+        let filler = EmptyFiller(title: "Find a user",
+                                 subTile: "Type something to\nsearch",
+                                 actionName: nil)
+        view?.adapt(toState: .empty(filler))
+    }
+
     // MARK: Actions
-    func viewDidload() {}
 
     func touchedSearch(with key: String) {
+        view?.adapt(toState: .loading)
         interactor?.searchUsers(by: key)
+    }
+
+    func numberOfCells() -> Int {
+        return interactor?.numberOfUsers() ?? 0
+    }
+
+    func setContent<T>(_ view: T, at index: IndexPath) where T: Displayable {
+        guard let user = interactor?.user(at: index.row) as? T.DisplayType else { return }
+        view.configure(with: user)
+    }
+
+    func didSelectedCell(at index: IndexPath) {
+        guard let user = interactor?.user(at: index.row) else { return }
+
     }
 }
 

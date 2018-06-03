@@ -11,7 +11,6 @@ import UIKit
 
 // Inspired from https://github.com/aschuch/StatefulViewController
 enum StateMachine {
-    case reconnecting
     case loading
     case content
     case error(EmptyFiller)

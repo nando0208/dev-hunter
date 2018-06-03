@@ -22,11 +22,13 @@ struct User: Decodable {
     let userName: String
     let userID: Int
     let photoURL: String
+    let score: Double
 
     enum CodingKeys: String, CodingKey {
         case userName = "login"
         case userID = "id"
         case photoURL = "avatar_url"
+        case score = "score"
     }
 }
 

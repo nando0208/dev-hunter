@@ -6,6 +6,7 @@
 import Foundation
 
 final class SearchInteractor: SearchInteractorInputProtocol {
+
     // MARK: - Properties
 
     weak var presenter: SearchInteractorOutputProtocol?
@@ -28,6 +29,10 @@ final class SearchInteractor: SearchInteractorInputProtocol {
                 self?.presenter?.finishedSearch(with: error)
             }
         }
+    }
+
+    func numberOfUsers() -> Int {
+        return users.count
     }
 
     func user(at index: Int) -> UserViewModel? {
