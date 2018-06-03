@@ -2,7 +2,7 @@
 platform :ios, '11.2'
 use_frameworks!
 
-target 'Candidate-Miner' do
+target 'dev-hunter' do
 
     # Development Tools
 
@@ -19,7 +19,7 @@ target 'Candidate-Miner' do
     pod 'AlamofireImage', '3.3.1'
 end
 
-target 'Candidate-MinerTests' do
+target 'dev-hunterTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'Nimble-Snapshots', '6.6.0'
@@ -27,7 +27,7 @@ target 'Candidate-MinerTests' do
     pod 'Nimble', '7.0.3'
 end
 
-target 'Candidate-MinerUITests' do
+target 'dev-hunterUITests' do
     inherit! :search_paths
     # Pods for testing
 end

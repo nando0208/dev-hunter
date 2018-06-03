@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1047215215202D77E8C26C11 /* Pods_dev_hunter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214723E123520348A017A6EB /* Pods_dev_hunter.framework */; };
 		5911F5C520BC928600CE2BA0 /* SearchLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5B520BC928600CE2BA0 /* SearchLocalDataManager.swift */; };
 		5911F5C620BC928600CE2BA0 /* SearchAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5B720BC928600CE2BA0 /* SearchAPIDataManager.swift */; };
 		5911F5C720BC928600CE2BA0 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5B920BC928600CE2BA0 /* SearchPresenter.swift */; };
@@ -21,11 +22,6 @@
 		5911F5D720BDAFF700CE2BA0 /* GithubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5D620BDAFF700CE2BA0 /* GithubRequest.swift */; };
 		5911F5DA20BDD02100CE2BA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5D920BDD02100CE2BA0 /* User.swift */; };
 		5911F5DD20BDD4B400CE2BA0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5DC20BDD4B400CE2BA0 /* UserViewModel.swift */; };
-		5911F5E120BDE82E00CE2BA0 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5E020BDE82E00CE2BA0 /* ArrayExtensions.swift */; };
-		5911F5E720BDFA2B00CE2BA0 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5E520BDFA2B00CE2BA0 /* EmptyView.swift */; };
-		5911F5E820BDFA2B00CE2BA0 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5E620BDFA2B00CE2BA0 /* Stateful.swift */; };
-		5911F5EA20BDFAB000CE2BA0 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5911F5E920BDFAB000CE2BA0 /* EmptyView.xib */; };
-		5911F5EC20C1A4FE00CE2BA0 /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5EB20C1A4FE00CE2BA0 /* Displayable.swift */; };
 		5911F5EF20C1DA7C00CE2BA0 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911F5EE20C1DA7C00CE2BA0 /* UserCell.swift */; };
 		5911F5F120C1DAF500CE2BA0 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5911F5F020C1DAF500CE2BA0 /* UserCell.xib */; };
 		59B1F02620C455830017CC7D /* UserLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1F01620C455830017CC7D /* UserLocalDataManager.swift */; };
@@ -41,6 +37,12 @@
 		59B1F03320C46B380017CC7D /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1F03220C46B380017CC7D /* RepositoryViewModel.swift */; };
 		59B1F03820C46DE80017CC7D /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B1F03720C46DE80017CC7D /* RepositoryCell.xib */; };
 		59B1F03A20C46E310017CC7D /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1F03920C46E310017CC7D /* RepositoryCell.swift */; };
+		59B1F04320C47BB20017CC7D /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1F03C20C47BB20017CC7D /* Displayable.swift */; };
+		59B1F04420C47BB20017CC7D /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B1F03E20C47BB20017CC7D /* EmptyView.xib */; };
+		59B1F04520C47BB20017CC7D /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1F03F20C47BB20017CC7D /* EmptyView.swift */; };
+		59B1F04620C47BB20017CC7D /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1F04020C47BB20017CC7D /* Stateful.swift */; };
+		59B1F04720C47BB20017CC7D /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1F04220C47BB20017CC7D /* ArrayExtensions.swift */; };
+		59B1F04920C47C2A0017CC7D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59B1F04820C47C2A0017CC7D /* Info.plist */; };
 		59FEF24A20BAFC95006CD77E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF24920BAFC95006CD77E /* AppDelegate.swift */; };
 		59FEF25120BAFC97006CD77E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF25020BAFC97006CD77E /* Assets.xcassets */; };
 		59FEF25420BAFC97006CD77E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF25220BAFC97006CD77E /* LaunchScreen.storyboard */; };
@@ -48,7 +50,8 @@
 		59FEF26A20BAFC97006CD77E /* Candidate_MinerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF26920BAFC97006CD77E /* Candidate_MinerUITests.swift */; };
 		681758830F58DCE4E384BD8A /* Pods_Candidate_MinerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C1614E6B882EA1384EEDA6 /* Pods_Candidate_MinerUITests.framework */; };
 		7FAEA81D901B76D96D114DC5 /* Pods_Candidate_MinerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83D6C0D1E43824437C5D84F /* Pods_Candidate_MinerTests.framework */; };
-		EF23219B016026DC89B1FF5A /* Pods_Candidate_Miner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FD3E8BFA763F8FF1377BD5 /* Pods_Candidate_Miner.framework */; };
+		7FD9CF0DB69D757859891575 /* Pods_dev_hunterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43617A8E1D44D466F85D7597 /* Pods_dev_hunterUITests.framework */; };
+		D64DC1AD1B2C476BC3C3AC4E /* Pods_dev_hunterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6541096303CAD23E11D2C1BF /* Pods_dev_hunterTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 
 /* Begin PBXFileReference section */
 		00FD3E8BFA763F8FF1377BD5 /* Pods_Candidate_Miner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candidate_Miner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		214723E123520348A017A6EB /* Pods_dev_hunter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dev_hunter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43617A8E1D44D466F85D7597 /* Pods_dev_hunterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dev_hunterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		483DD93012BBB74E4A2373A3 /* Pods-dev-hunterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-hunterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dev-hunterTests/Pods-dev-hunterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C174A809F5855AA6835D923 /* Pods-Candidate-MinerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candidate-MinerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Candidate-MinerTests/Pods-Candidate-MinerTests.release.xcconfig"; sourceTree = "<group>"; };
 		5911F5B520BC928600CE2BA0 /* SearchLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLocalDataManager.swift; sourceTree = "<group>"; };
 		5911F5B720BC928600CE2BA0 /* SearchAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAPIDataManager.swift; sourceTree = "<group>"; };
@@ -85,11 +91,6 @@
 		5911F5D620BDAFF700CE2BA0 /* GithubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRequest.swift; sourceTree = "<group>"; };
 		5911F5D920BDD02100CE2BA0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5911F5DC20BDD4B400CE2BA0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		5911F5E020BDE82E00CE2BA0 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
-		5911F5E520BDFA2B00CE2BA0 /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
-		5911F5E620BDFA2B00CE2BA0 /* Stateful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
-		5911F5E920BDFAB000CE2BA0 /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
-		5911F5EB20C1A4FE00CE2BA0 /* Displayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
 		5911F5EE20C1DA7C00CE2BA0 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		5911F5F020C1DAF500CE2BA0 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		59B1F01620C455830017CC7D /* UserLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocalDataManager.swift; sourceTree = "<group>"; };
@@ -105,20 +106,31 @@
 		59B1F03220C46B380017CC7D /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		59B1F03720C46DE80017CC7D /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
 		59B1F03920C46E310017CC7D /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
-		59FEF24620BAFC95006CD77E /* Candidate-Miner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Candidate-Miner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B1F03C20C47BB20017CC7D /* Displayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
+		59B1F03E20C47BB20017CC7D /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		59B1F03F20C47BB20017CC7D /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		59B1F04020C47BB20017CC7D /* Stateful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
+		59B1F04220C47BB20017CC7D /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		59B1F04820C47C2A0017CC7D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59FEF24620BAFC95006CD77E /* dev-hunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev-hunter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FEF24920BAFC95006CD77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59FEF25020BAFC97006CD77E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59FEF25320BAFC97006CD77E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		59FEF25520BAFC97006CD77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59FEF25A20BAFC97006CD77E /* Candidate-MinerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Candidate-MinerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59FEF25A20BAFC97006CD77E /* dev-hunterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dev-hunterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FEF25E20BAFC97006CD77E /* Candidate_MinerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate_MinerTests.swift; sourceTree = "<group>"; };
 		59FEF26020BAFC97006CD77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59FEF26520BAFC97006CD77E /* Candidate-MinerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Candidate-MinerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59FEF26520BAFC97006CD77E /* dev-hunterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dev-hunterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FEF26920BAFC97006CD77E /* Candidate_MinerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate_MinerUITests.swift; sourceTree = "<group>"; };
 		59FEF26B20BAFC97006CD77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6541096303CAD23E11D2C1BF /* Pods_dev_hunterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dev_hunterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		805398E2AFB1635FBB16A586 /* Pods-Candidate-MinerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candidate-MinerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Candidate-MinerUITests/Pods-Candidate-MinerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8E63924222E86D538EF6718E /* Pods-dev-hunter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-hunter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dev-hunter/Pods-dev-hunter.debug.xcconfig"; sourceTree = "<group>"; };
+		9BC1588432B2EED4D5FCC774 /* Pods-dev-hunterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-hunterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dev-hunterTests/Pods-dev-hunterTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FDA1C683EE56580DB634A82 /* Pods-Candidate-MinerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candidate-MinerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Candidate-MinerTests/Pods-Candidate-MinerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2942F49314AC9E9F4D1701A /* Pods-dev-hunterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-hunterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dev-hunterUITests/Pods-dev-hunterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B27118F62F3DE79DAC3C12BB /* Pods-dev-hunterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-hunterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dev-hunterUITests/Pods-dev-hunterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C83D6C0D1E43824437C5D84F /* Pods_Candidate_MinerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candidate_MinerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E673FEAE43C58B19FD122112 /* Pods-dev-hunter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-hunter.release.xcconfig"; path = "Pods/Target Support Files/Pods-dev-hunter/Pods-dev-hunter.release.xcconfig"; sourceTree = "<group>"; };
 		EC190B63A189E95638C35FA9 /* Pods-Candidate-Miner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candidate-Miner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Candidate-Miner/Pods-Candidate-Miner.release.xcconfig"; sourceTree = "<group>"; };
 		F6AD33A87150ED1DADEDDFEA /* Pods-Candidate-Miner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candidate-Miner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Candidate-Miner/Pods-Candidate-Miner.debug.xcconfig"; sourceTree = "<group>"; };
 		F8C1614E6B882EA1384EEDA6 /* Pods_Candidate_MinerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candidate_MinerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF23219B016026DC89B1FF5A /* Pods_Candidate_Miner.framework in Frameworks */,
+				1047215215202D77E8C26C11 /* Pods_dev_hunter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FAEA81D901B76D96D114DC5 /* Pods_Candidate_MinerTests.framework in Frameworks */,
+				D64DC1AD1B2C476BC3C3AC4E /* Pods_dev_hunterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				681758830F58DCE4E384BD8A /* Pods_Candidate_MinerUITests.framework in Frameworks */,
+				7FD9CF0DB69D757859891575 /* Pods_dev_hunterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +173,9 @@
 				00FD3E8BFA763F8FF1377BD5 /* Pods_Candidate_Miner.framework */,
 				C83D6C0D1E43824437C5D84F /* Pods_Candidate_MinerTests.framework */,
 				F8C1614E6B882EA1384EEDA6 /* Pods_Candidate_MinerUITests.framework */,
+				214723E123520348A017A6EB /* Pods_dev_hunter.framework */,
+				6541096303CAD23E11D2C1BF /* Pods_dev_hunterTests.framework */,
+				43617A8E1D44D466F85D7597 /* Pods_dev_hunterUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -264,7 +281,6 @@
 		5911F5CF20BC93A700CE2BA0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				5911F5DE20BDE80000CE2BA0 /* Utils */,
 				5911F5D820BDD01800CE2BA0 /* Models */,
 				5911F5D520BDAFE800CE2BA0 /* Requests */,
 				5911F5D020BC942C00CE2BA0 /* NetworkRequest.swift */,
@@ -298,35 +314,6 @@
 				59B1F03220C46B380017CC7D /* RepositoryViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		5911F5DE20BDE80000CE2BA0 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				5911F5E420BDFA2B00CE2BA0 /* Stateful */,
-				5911F5DF20BDE81B00CE2BA0 /* Extensions */,
-				5911F5EB20C1A4FE00CE2BA0 /* Displayable.swift */,
-			);
-			name = Utils;
-			path = "Candidate-Miner/Utils";
-			sourceTree = SOURCE_ROOT;
-		};
-		5911F5DF20BDE81B00CE2BA0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5911F5E020BDE82E00CE2BA0 /* ArrayExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		5911F5E420BDFA2B00CE2BA0 /* Stateful */ = {
-			isa = PBXGroup;
-			children = (
-				5911F5E920BDFAB000CE2BA0 /* EmptyView.xib */,
-				5911F5E520BDFA2B00CE2BA0 /* EmptyView.swift */,
-				5911F5E620BDFA2B00CE2BA0 /* Stateful.swift */,
-			);
-			path = Stateful;
 			sourceTree = "<group>";
 		};
 		5911F5ED20C1DA7100CE2BA0 /* Cells */ = {
@@ -436,12 +423,40 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		59B1F03B20C47BB20017CC7D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				59B1F03C20C47BB20017CC7D /* Displayable.swift */,
+				59B1F03D20C47BB20017CC7D /* Stateful */,
+				59B1F04120C47BB20017CC7D /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		59B1F03D20C47BB20017CC7D /* Stateful */ = {
+			isa = PBXGroup;
+			children = (
+				59B1F03E20C47BB20017CC7D /* EmptyView.xib */,
+				59B1F03F20C47BB20017CC7D /* EmptyView.swift */,
+				59B1F04020C47BB20017CC7D /* Stateful.swift */,
+			);
+			path = Stateful;
+			sourceTree = "<group>";
+		};
+		59B1F04120C47BB20017CC7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59B1F04220C47BB20017CC7D /* ArrayExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		59FEF23D20BAFC95006CD77E = {
 			isa = PBXGroup;
 			children = (
-				59FEF24820BAFC95006CD77E /* Candidate-Miner */,
-				59FEF25D20BAFC97006CD77E /* Candidate-MinerTests */,
-				59FEF26820BAFC97006CD77E /* Candidate-MinerUITests */,
+				59FEF24820BAFC95006CD77E /* dev-hunter */,
+				59FEF25D20BAFC97006CD77E /* dev-hunterTests */,
+				59FEF26820BAFC97006CD77E /* dev-hunterUITests */,
 				59FEF24720BAFC95006CD77E /* Products */,
 				C06AB690D78D70257CF6AA72 /* Pods */,
 				4405EB1307B87254D74324C9 /* Frameworks */,
@@ -451,42 +466,43 @@
 		59FEF24720BAFC95006CD77E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59FEF24620BAFC95006CD77E /* Candidate-Miner.app */,
-				59FEF25A20BAFC97006CD77E /* Candidate-MinerTests.xctest */,
-				59FEF26520BAFC97006CD77E /* Candidate-MinerUITests.xctest */,
+				59FEF24620BAFC95006CD77E /* dev-hunter.app */,
+				59FEF25A20BAFC97006CD77E /* dev-hunterTests.xctest */,
+				59FEF26520BAFC97006CD77E /* dev-hunterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		59FEF24820BAFC95006CD77E /* Candidate-Miner */ = {
+		59FEF24820BAFC95006CD77E /* dev-hunter */ = {
 			isa = PBXGroup;
 			children = (
+				59B1F04820C47C2A0017CC7D /* Info.plist */,
+				59B1F03B20C47BB20017CC7D /* Utils */,
 				5911F5CF20BC93A700CE2BA0 /* Network */,
 				5911F5B120BC928600CE2BA0 /* Modules */,
 				59FEF24920BAFC95006CD77E /* AppDelegate.swift */,
 				59FEF25020BAFC97006CD77E /* Assets.xcassets */,
 				59FEF25220BAFC97006CD77E /* LaunchScreen.storyboard */,
-				59FEF25520BAFC97006CD77E /* Info.plist */,
 			);
-			path = "Candidate-Miner";
+			path = "dev-hunter";
 			sourceTree = "<group>";
 		};
-		59FEF25D20BAFC97006CD77E /* Candidate-MinerTests */ = {
+		59FEF25D20BAFC97006CD77E /* dev-hunterTests */ = {
 			isa = PBXGroup;
 			children = (
 				59FEF25E20BAFC97006CD77E /* Candidate_MinerTests.swift */,
 				59FEF26020BAFC97006CD77E /* Info.plist */,
 			);
-			path = "Candidate-MinerTests";
+			path = "dev-hunterTests";
 			sourceTree = "<group>";
 		};
-		59FEF26820BAFC97006CD77E /* Candidate-MinerUITests */ = {
+		59FEF26820BAFC97006CD77E /* dev-hunterUITests */ = {
 			isa = PBXGroup;
 			children = (
 				59FEF26920BAFC97006CD77E /* Candidate_MinerUITests.swift */,
 				59FEF26B20BAFC97006CD77E /* Info.plist */,
 			);
-			path = "Candidate-MinerUITests";
+			path = "dev-hunterUITests";
 			sourceTree = "<group>";
 		};
 		C06AB690D78D70257CF6AA72 /* Pods */ = {
@@ -498,6 +514,12 @@
 				4C174A809F5855AA6835D923 /* Pods-Candidate-MinerTests.release.xcconfig */,
 				FB79616B015560C17F3F25D7 /* Pods-Candidate-MinerUITests.debug.xcconfig */,
 				805398E2AFB1635FBB16A586 /* Pods-Candidate-MinerUITests.release.xcconfig */,
+				8E63924222E86D538EF6718E /* Pods-dev-hunter.debug.xcconfig */,
+				E673FEAE43C58B19FD122112 /* Pods-dev-hunter.release.xcconfig */,
+				483DD93012BBB74E4A2373A3 /* Pods-dev-hunterTests.debug.xcconfig */,
+				9BC1588432B2EED4D5FCC774 /* Pods-dev-hunterTests.release.xcconfig */,
+				B27118F62F3DE79DAC3C12BB /* Pods-dev-hunterUITests.debug.xcconfig */,
+				A2942F49314AC9E9F4D1701A /* Pods-dev-hunterUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -505,9 +527,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		59FEF24520BAFC95006CD77E /* Candidate-Miner */ = {
+		59FEF24520BAFC95006CD77E /* dev-hunter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59FEF26E20BAFC97006CD77E /* Build configuration list for PBXNativeTarget "Candidate-Miner" */;
+			buildConfigurationList = 59FEF26E20BAFC97006CD77E /* Build configuration list for PBXNativeTarget "dev-hunter" */;
 			buildPhases = (
 				42E40C9324D426C9442A17AF /* [CP] Check Pods Manifest.lock */,
 				5911F5AE20BC696100CE2BA0 /* Swiftlint */,
@@ -520,14 +542,14 @@
 			);
 			dependencies = (
 			);
-			name = "Candidate-Miner";
+			name = "dev-hunter";
 			productName = "Candidate-Miner";
-			productReference = 59FEF24620BAFC95006CD77E /* Candidate-Miner.app */;
+			productReference = 59FEF24620BAFC95006CD77E /* dev-hunter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		59FEF25920BAFC97006CD77E /* Candidate-MinerTests */ = {
+		59FEF25920BAFC97006CD77E /* dev-hunterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59FEF27120BAFC97006CD77E /* Build configuration list for PBXNativeTarget "Candidate-MinerTests" */;
+			buildConfigurationList = 59FEF27120BAFC97006CD77E /* Build configuration list for PBXNativeTarget "dev-hunterTests" */;
 			buildPhases = (
 				3DDEA0266D21BF275EAFB3A8 /* [CP] Check Pods Manifest.lock */,
 				59FEF25620BAFC97006CD77E /* Sources */,
@@ -540,14 +562,14 @@
 			dependencies = (
 				59FEF25C20BAFC97006CD77E /* PBXTargetDependency */,
 			);
-			name = "Candidate-MinerTests";
+			name = "dev-hunterTests";
 			productName = "Candidate-MinerTests";
-			productReference = 59FEF25A20BAFC97006CD77E /* Candidate-MinerTests.xctest */;
+			productReference = 59FEF25A20BAFC97006CD77E /* dev-hunterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		59FEF26420BAFC97006CD77E /* Candidate-MinerUITests */ = {
+		59FEF26420BAFC97006CD77E /* dev-hunterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59FEF27420BAFC97006CD77E /* Build configuration list for PBXNativeTarget "Candidate-MinerUITests" */;
+			buildConfigurationList = 59FEF27420BAFC97006CD77E /* Build configuration list for PBXNativeTarget "dev-hunterUITests" */;
 			buildPhases = (
 				58CC05B99360664455B7EDAA /* [CP] Check Pods Manifest.lock */,
 				59FEF26120BAFC97006CD77E /* Sources */,
@@ -559,9 +581,9 @@
 			dependencies = (
 				59FEF26720BAFC97006CD77E /* PBXTargetDependency */,
 			);
-			name = "Candidate-MinerUITests";
+			name = "dev-hunterUITests";
 			productName = "Candidate-MinerUITests";
-			productReference = 59FEF26520BAFC97006CD77E /* Candidate-MinerUITests.xctest */;
+			productReference = 59FEF26520BAFC97006CD77E /* dev-hunterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -587,7 +609,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 59FEF24120BAFC95006CD77E /* Build configuration list for PBXProject "Candidate-Miner" */;
+			buildConfigurationList = 59FEF24120BAFC95006CD77E /* Build configuration list for PBXProject "dev-hunter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -600,9 +622,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				59FEF24520BAFC95006CD77E /* Candidate-Miner */,
-				59FEF25920BAFC97006CD77E /* Candidate-MinerTests */,
-				59FEF26420BAFC97006CD77E /* Candidate-MinerUITests */,
+				59FEF24520BAFC95006CD77E /* dev-hunter */,
+				59FEF25920BAFC97006CD77E /* dev-hunterTests */,
+				59FEF26420BAFC97006CD77E /* dev-hunterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -612,11 +634,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5911F5EA20BDFAB000CE2BA0 /* EmptyView.xib in Resources */,
 				59FEF25420BAFC97006CD77E /* LaunchScreen.storyboard in Resources */,
 				59FEF25120BAFC97006CD77E /* Assets.xcassets in Resources */,
+				59B1F04920C47C2A0017CC7D /* Info.plist in Resources */,
 				59B1F03820C46DE80017CC7D /* RepositoryCell.xib in Resources */,
 				5911F5F120C1DAF500CE2BA0 /* UserCell.xib in Resources */,
+				59B1F04420C47BB20017CC7D /* EmptyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,7 +671,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Candidate-MinerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-dev-hunterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -666,7 +689,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Candidate-Miner-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-dev-hunter-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -684,7 +707,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Candidate-MinerUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-dev-hunterUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -711,7 +734,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Candidate-MinerTests/Pods-Candidate-MinerTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-dev-hunterTests/Pods-dev-hunterTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -726,7 +749,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Candidate-MinerTests/Pods-Candidate-MinerTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dev-hunterTests/Pods-dev-hunterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B5291905D02E01EB9E84BB16 /* [CP] Embed Pods Frameworks */ = {
@@ -735,7 +758,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Candidate-Miner/Pods-Candidate-Miner-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-dev-hunter/Pods-dev-hunter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
@@ -748,7 +771,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Candidate-Miner/Pods-Candidate-Miner-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dev-hunter/Pods-dev-hunter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -759,10 +782,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5911F5DA20BDD02100CE2BA0 /* User.swift in Sources */,
-				5911F5E120BDE82E00CE2BA0 /* ArrayExtensions.swift in Sources */,
+				59B1F04720C47BB20017CC7D /* ArrayExtensions.swift in Sources */,
 				5911F5CD20BC928600CE2BA0 /* SearchRouter.swift in Sources */,
 				59FEF24A20BAFC95006CD77E /* AppDelegate.swift in Sources */,
-				5911F5E720BDFA2B00CE2BA0 /* EmptyView.swift in Sources */,
 				5911F5CB20BC928600CE2BA0 /* SearchItem.swift in Sources */,
 				5911F5EF20C1DA7C00CE2BA0 /* UserCell.swift in Sources */,
 				59B1F03120C45AAE0017CC7D /* Repository.swift in Sources */,
@@ -770,13 +792,14 @@
 				5911F5DD20BDD4B400CE2BA0 /* UserViewModel.swift in Sources */,
 				59B1F02D20C455830017CC7D /* UserInteractor.swift in Sources */,
 				59B1F02E20C455830017CC7D /* UserRouter.swift in Sources */,
-				5911F5E820BDFA2B00CE2BA0 /* Stateful.swift in Sources */,
 				59B1F02B20C455830017CC7D /* UserProtocols.swift in Sources */,
 				5911F5D120BC942C00CE2BA0 /* NetworkRequest.swift in Sources */,
+				59B1F04520C47BB20017CC7D /* EmptyView.swift in Sources */,
 				59B1F03A20C46E310017CC7D /* RepositoryCell.swift in Sources */,
 				5911F5D320BC967A00CE2BA0 /* Network.swift in Sources */,
 				59B1F02720C455830017CC7D /* UserAPIDataManager.swift in Sources */,
 				59B1F02620C455830017CC7D /* UserLocalDataManager.swift in Sources */,
+				59B1F04320C47BB20017CC7D /* Displayable.swift in Sources */,
 				5911F5D720BDAFF700CE2BA0 /* GithubRequest.swift in Sources */,
 				5911F5CA20BC928600CE2BA0 /* SearchProtocols.swift in Sources */,
 				5911F5C920BC928600CE2BA0 /* SearchView.swift in Sources */,
@@ -785,9 +808,9 @@
 				5911F5C720BC928600CE2BA0 /* SearchPresenter.swift in Sources */,
 				59B1F02A20C455830017CC7D /* UserView.swift in Sources */,
 				5911F5C620BC928600CE2BA0 /* SearchAPIDataManager.swift in Sources */,
-				5911F5EC20C1A4FE00CE2BA0 /* Displayable.swift in Sources */,
 				5911F5C520BC928600CE2BA0 /* SearchLocalDataManager.swift in Sources */,
 				59B1F02820C455830017CC7D /* UserPresenter.swift in Sources */,
+				59B1F04620C47BB20017CC7D /* Stateful.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,12 +837,12 @@
 /* Begin PBXTargetDependency section */
 		59FEF25C20BAFC97006CD77E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 59FEF24520BAFC95006CD77E /* Candidate-Miner */;
+			target = 59FEF24520BAFC95006CD77E /* dev-hunter */;
 			targetProxy = 59FEF25B20BAFC97006CD77E /* PBXContainerItemProxy */;
 		};
 		59FEF26720BAFC97006CD77E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 59FEF24520BAFC95006CD77E /* Candidate-Miner */;
+			target = 59FEF24520BAFC95006CD77E /* dev-hunter */;
 			targetProxy = 59FEF26620BAFC97006CD77E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -952,16 +975,16 @@
 		};
 		59FEF26F20BAFC97006CD77E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6AD33A87150ED1DADEDDFEA /* Pods-Candidate-Miner.debug.xcconfig */;
+			baseConfigurationReference = 8E63924222E86D538EF6718E /* Pods-dev-hunter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Candidate-Miner/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/dev-hunter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fernando-ferreira.Candidate-Miner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fernando-ferreira.dev-hunter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -970,16 +993,16 @@
 		};
 		59FEF27020BAFC97006CD77E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC190B63A189E95638C35FA9 /* Pods-Candidate-Miner.release.xcconfig */;
+			baseConfigurationReference = E673FEAE43C58B19FD122112 /* Pods-dev-hunter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Candidate-Miner/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/dev-hunter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fernando-ferreira.Candidate-Miner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fernando-ferreira.dev-hunter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -988,7 +1011,7 @@
 		};
 		59FEF27220BAFC97006CD77E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FDA1C683EE56580DB634A82 /* Pods-Candidate-MinerTests.debug.xcconfig */;
+			baseConfigurationReference = 483DD93012BBB74E4A2373A3 /* Pods-dev-hunterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1003,13 +1026,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Candidate-Miner.app/Candidate-Miner";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dev-hunter.app/dev-hunter";
 			};
 			name = Debug;
 		};
 		59FEF27320BAFC97006CD77E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C174A809F5855AA6835D923 /* Pods-Candidate-MinerTests.release.xcconfig */;
+			baseConfigurationReference = 9BC1588432B2EED4D5FCC774 /* Pods-dev-hunterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1024,13 +1047,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Candidate-Miner.app/Candidate-Miner";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dev-hunter.app/dev-hunter";
 			};
 			name = Release;
 		};
 		59FEF27520BAFC97006CD77E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB79616B015560C17F3F25D7 /* Pods-Candidate-MinerUITests.debug.xcconfig */;
+			baseConfigurationReference = B27118F62F3DE79DAC3C12BB /* Pods-dev-hunterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1050,7 +1073,7 @@
 		};
 		59FEF27620BAFC97006CD77E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 805398E2AFB1635FBB16A586 /* Pods-Candidate-MinerUITests.release.xcconfig */;
+			baseConfigurationReference = A2942F49314AC9E9F4D1701A /* Pods-dev-hunterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1071,7 +1094,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		59FEF24120BAFC95006CD77E /* Build configuration list for PBXProject "Candidate-Miner" */ = {
+		59FEF24120BAFC95006CD77E /* Build configuration list for PBXProject "dev-hunter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59FEF26C20BAFC97006CD77E /* Debug */,
@@ -1080,7 +1103,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59FEF26E20BAFC97006CD77E /* Build configuration list for PBXNativeTarget "Candidate-Miner" */ = {
+		59FEF26E20BAFC97006CD77E /* Build configuration list for PBXNativeTarget "dev-hunter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59FEF26F20BAFC97006CD77E /* Debug */,
@@ -1089,7 +1112,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59FEF27120BAFC97006CD77E /* Build configuration list for PBXNativeTarget "Candidate-MinerTests" */ = {
+		59FEF27120BAFC97006CD77E /* Build configuration list for PBXNativeTarget "dev-hunterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59FEF27220BAFC97006CD77E /* Debug */,
@@ -1098,7 +1121,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59FEF27420BAFC97006CD77E /* Build configuration list for PBXNativeTarget "Candidate-MinerUITests" */ = {
+		59FEF27420BAFC97006CD77E /* Build configuration list for PBXNativeTarget "dev-hunterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59FEF27520BAFC97006CD77E /* Debug */,
