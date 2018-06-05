@@ -20,5 +20,6 @@ extension RepositoryCell: Displayable {
     func configure(with display: RepositoryViewModel) {
         nameLabel?.text = display.name
         starsLabel?.text = display.starsCount
+        dateLabel?.text = display.dateText
     }
 }
